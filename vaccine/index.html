@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tica Tarikh</title>
+    <link rel="stylesheet" href="cssFile/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>👶 শিশুর টিকা সূচি</h1>
+
+    <div class="input-box">
+        <form id="vaccineForm">
+            <label>জন্ম তারিখ দিন:</label><br><br>
+            <input type="date" id="dob" required>
+
+            <button type="submit">তালিকা দেখুন</button>
+        </form>
+
+        <div class="btn-group">
+            <button onclick="downloadPDF()">PDF Download</button>
+            <button onclick="window.print()">Print</button>
+        </div>
+    </div>
+
+    <div class="table-wrapper">
+        <table id="result">
+            <thead>
+                   <tr>
+                    <th>টিকার নাম</th>
+                    <th>সময়</th>
+                    <th>তারিখ</th>
+                 <th>ডোজ</th>
+    </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- PDF library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+
+<script src="jsFile/script.js"></script>
+</body>
+</html>

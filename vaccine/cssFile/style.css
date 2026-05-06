@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.input-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #ff7a18;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background: #ff3c00;
+}
+
+.btn-group {
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    table-layout: fixed; /* important fix */
+}
+
+ td {
+    padding: 12px;
+    text-align: center;  /* সব center */
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+th{
+    background-color: #c6d3f1;
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background: #f2f6ff;
+}
+
+tr:hover {
+    background: #dfe9ff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
